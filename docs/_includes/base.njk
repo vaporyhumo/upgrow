@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "head.njk" %}
+  </head>
+
+  <body>
+    {% include "navbar.njk" %}
+
+    <section class="section">
+      <div class="container">
+        <article class="message is-warning">
+          <div class="message-header">
+            <p>Heads Up!</p>
+          </div>
+
+          <div class="message-body">
+            This project is a work in progress. We are working on documenting our
+            best practices to help sustainable development for the long term with
+            Ruby on Rails. The Upgrow gem is not yet available and the contents of
+            the guide are still being amended, matured, and reviewed. That being
+            said, feel free to follow the GitHub repo and stay tuned for the
+            latest updates!
+          </div>
+        </article>
+
+        {{ content | safe }}
+
+        {% include "footer.html" %}
+      </div>
+    </section>
+  </body>
+</html>
